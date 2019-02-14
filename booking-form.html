@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Booking Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Booking an appointment with us</h1>
+
+      <h3>Enter you information in order to be able to book an appointment with us.</h3>
+      <hr>
+      <br></br>
+        <form id="confirm">
+
+          <div class="form-group">
+            <label for="name">Enter your full name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="description">A descrption of why do you need the appointment</label>
+            <input id="describtion" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date for your appointment:</label>
+            <input id="date" class="form-control" type="date">
+          </div>
+
+
+          <div class="form-group">
+            <label for="stime">Your appointment time starts at:</label>
+            <input id="stime"  name="time" type="time">
+          </div>
+
+          <div class="form-group">
+            <label for="etime">Your appointment time ends at:</label>
+            <input id="etime" name="time" type="time">
+          </div>
+
+
+          <div class="form-group">
+            <label>Gender</label>
+            <select id="gender">
+              <option id="male">Male</option>
+              <option id="female">Female</option>
+            </select>
+          </div>
+
+
+          <button class="btn btn-primary" type="submit">Book my appointment</button>
+
+
+
+        </form>
+        <hr>
+        <br>
+        <div id="confirmation">
+          <span class="name"></span>, your booking is successful.
+           Your appointment will be on <span class="date"></span>, from
+           <span class="stime"></span> to <span class="etime"></span>
+         </div>
+
+
+
+    </div>
+  </body>
+</html>
